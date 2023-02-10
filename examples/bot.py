@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv(".env")
 
 intents = Intents.default()
-intents.message_content = True
+intents.messages = True
 
 bot = commands.Bot(command_prefix="?", intents=intents)
 
